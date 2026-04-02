@@ -20,6 +20,8 @@ export default function Home() {
                   src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" 
                   alt="Hero" 
                   fill
+                  priority
+                  sizes="(max-width: 768px) 128px, 160px"
                   className="object-cover"
                 />
               </div>
@@ -52,6 +54,7 @@ export default function Home() {
                     src={`https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop&sig=${i}`}
                     alt="Work"
                     fill
+                    sizes="(max-width: 768px) 256px, 288px"
                     className="object-cover"
                   />
                 </div>
@@ -251,6 +254,7 @@ export default function Home() {
                   src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2070&auto=format&fit=crop" 
                   alt="Switchax Strategy" 
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -283,6 +287,7 @@ export default function Home() {
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" 
               alt="Hanson Team" 
               fill
+              sizes="100vw"
               className="object-cover"
             />
           </div>
@@ -307,6 +312,7 @@ export default function Home() {
                   alt="Avatar" 
                   width={64} 
                   height={64} 
+                  style={{ height: "auto" }}
                   className="rounded-full object-cover mb-8" 
                 />
                 <p className="text-[1.25rem] md:text-[1.5rem] font-medium text-foreground leading-snug tracking-tight mb-8">

@@ -23,6 +23,8 @@ export default function AboutPage() {
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop" 
               alt="Switchax Team" 
               fill
+              priority
+              sizes="100vw"
               className="object-cover"
             />
           </div>

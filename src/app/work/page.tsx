@@ -22,7 +22,7 @@ const caseStudies = [
     title: "Financial Transformation",
     desc: "Seamlessly migrated financial data from legacy systems to Zoho Books for a professional services firm.",
     tags: ["Finance", "2024"],
-    image: "https://images.unsplash.com/photo-1454165833767-027ffea9e77b?q=80&w=1200&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop"
   }
 ]
 
@@ -69,6 +69,7 @@ export default function WorkPage() {
                   src={project.image} 
                   alt={project.title} 
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
                 />
               </div>
