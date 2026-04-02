@@ -23,21 +23,21 @@ export default function Home() {
                   className="object-cover"
                 />
               </div>
-              <h1 className="font-heading font-semibold text-[3.5rem] md:text-[6rem] leading-[1.1] tracking-tighter text-foreground">
+              <h1 className="font-heading font-semibold text-[2.8rem] xs:text-[3.5rem] md:text-[6rem] leading-[1.1] tracking-tighter text-foreground break-words">
                 Transform Your
               </h1>
             </div>
-            <h1 className="font-heading font-semibold text-[3.5rem] md:text-[6rem] leading-[1.1] tracking-tighter text-foreground mt-2 md:mt-0">
+            <h1 className="font-heading font-semibold text-[2.8rem] xs:text-[3.5rem] md:text-[6rem] leading-[1.1] tracking-tighter text-foreground mt-2 md:mt-0 break-words">
               Business with Zoho.
             </h1>
             <p className="mt-8 text-lg md:text-xl text-muted max-w-2xl font-normal leading-relaxed">
               Authorized Zoho Partner. We bridge the gap between Zoho's powerful ecosystem and your unique business needs. Expert implementation, seamless migration, and ongoing strategic support.
             </p>
-            <div className="flex gap-4 mt-10">
-              <Link href="/contact" className="bg-zoho-blue text-white px-8 py-4 rounded-full font-medium hover:bg-zoho-blue/90 transition-colors">
+            <div className="flex flex-col sm:flex-row gap-4 mt-10">
+              <Link href="/contact" className="bg-zoho-blue text-white px-8 py-4 rounded-full font-medium hover:bg-zoho-blue/90 transition-colors text-center">
                 Start Your Transformation
               </Link>
-              <button className="border border-zoho-blue text-zoho-blue px-8 py-4 rounded-full font-medium hover:bg-zoho-blue hover:text-white transition-colors">
+              <button className="border border-zoho-blue text-zoho-blue px-8 py-4 rounded-full font-medium hover:bg-zoho-blue hover:text-white transition-colors text-center">
                 Explore Services
               </button>
             </div>
