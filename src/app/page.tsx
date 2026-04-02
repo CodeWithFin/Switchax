@@ -48,11 +48,18 @@ export default function Home() {
           {/* Image Marquee */}
           <div className="w-full relative py-4">
             <Marquee speed="slow" className="gap-6" innerClassName="gap-6">
-              {[1, 2, 3, 4, 1].map((i, idx) => (
+              {[
+                "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop"
+              ].map((src, idx) => (
                 <div key={idx} className="relative w-64 h-48 md:w-72 md:h-56 shrink-0 overflow-hidden rounded-xl">
                   <Image 
-                    src={`https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop&sig=${i}`}
-                    alt="Work"
+                    src={src}
+                    alt={`Work feature ${idx + 1}`}
                     fill
                     sizes="(max-width: 768px) 256px, 288px"
                     className="object-cover"
