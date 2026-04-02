@@ -9,7 +9,6 @@ const navLinks = [
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Work", href: "/work" },
-  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -37,13 +36,6 @@ export default function Navbar() {
             {link.name}
           </Link>
         ))}
-        <div className="flex items-center gap-1 cursor-pointer hover:text-foreground transition-colors group">
-          Pages 
-          <Icon 
-            icon="solar:alt-arrow-down-linear" 
-            className="text-xs transition-transform group-hover:rotate-180" 
-          />
-        </div>
       </div>
 
       <div className="flex items-center gap-4">
