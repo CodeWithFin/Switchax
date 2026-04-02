@@ -34,10 +34,10 @@ export default function Home() {
               Authorized Zoho Partner. We bridge the gap between Zoho's powerful ecosystem and your unique business needs. Expert implementation, seamless migration, and ongoing strategic support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
-              <Link href="/contact" className="bg-zoho-blue text-white px-8 py-4 rounded-full font-medium hover:bg-zoho-blue/90 transition-colors text-center">
+              <Link href="/contact" className="bg-zoho-blue text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium hover:bg-zoho-blue/90 transition-colors text-center">
                 Start Your Transformation
               </Link>
-              <button className="border border-zoho-blue text-zoho-blue px-8 py-4 rounded-full font-medium hover:bg-zoho-blue hover:text-white transition-colors text-center">
+              <button className="border border-zoho-blue text-zoho-blue px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium hover:bg-zoho-blue hover:text-white transition-colors text-center">
                 Explore Services
               </button>
             </div>
@@ -95,7 +95,7 @@ export default function Home() {
               ))}
             </div>
             <div className="flex justify-start md:justify-end">
-              <button className="inline-flex items-center gap-2 border border-foreground text-foreground rounded-full py-2 px-5 hover:bg-foreground hover:text-background transition-colors group">
+              <button className="inline-flex items-center gap-2 border border-foreground text-foreground rounded-full py-2.5 px-6 hover:bg-foreground hover:text-background transition-colors group">
                 <span className="text-sm font-normal">Learn More</span>
                 <Icon 
                   icon="solar:arrow-right-linear" 

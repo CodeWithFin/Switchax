@@ -50,7 +50,7 @@ export default function Navbar() {
         {/* Desktop CTA */}
         <Link 
           href="/contact" 
-          className="hidden md:flex items-center bg-zoho-blue text-white rounded-full py-2 px-4 gap-2 hover:bg-zoho-blue/90 transition-colors"
+          className="hidden md:flex items-center bg-zoho-blue text-white rounded-full py-2.5 px-6 gap-2 hover:bg-zoho-blue/90 transition-colors"
         >
           <span className="text-sm font-normal">Lets talk</span>
           <Icon icon="solar:arrow-right-up-linear" />
@@ -89,10 +89,10 @@ export default function Navbar() {
               <Link 
                 href="/contact" 
                 onClick={() => setIsMenuOpen(false)}
-                className="flex items-center justify-between bg-zoho-blue text-white rounded-full py-4 px-8 mt-10"
+                className="flex items-center justify-between bg-zoho-blue text-white rounded-full py-3 px-6 mt-8"
               >
-                <span className="text-xl font-medium">Lets talk</span>
-                <Icon icon="solar:arrow-right-up-linear" className="text-2xl" />
+                <span className="text-lg font-medium">Lets talk</span>
+                <Icon icon="solar:arrow-right-up-linear" className="text-xl" />
               </Link>
             </div>
             
