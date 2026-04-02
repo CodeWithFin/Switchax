@@ -54,6 +54,7 @@ export default async function AdminDashboard() {
                 <th className="px-8 py-4">Name</th>
                 <th className="px-8 py-4">Email</th>
                 <th className="px-8 py-4">Company</th>
+                <th className="px-8 py-4">Message</th>
                 <th className="px-8 py-4">Date</th>
                 <th className="px-8 py-4 text-right">Action</th>
               </tr>
@@ -68,11 +69,16 @@ export default async function AdminDashboard() {
                   <td className="px-8 py-6 font-medium text-foreground">{lead.name}</td>
                   <td className="px-8 py-6 text-muted">{lead.email}</td>
                   <td className="px-8 py-6 text-muted italic">{lead.company || "-"}</td>
+                  <td className="px-8 py-6 text-muted text-sm max-w-[200px] truncate" title={lead.message}>
+                    {lead.message}
+                  </td>
                   <td className="px-8 py-6 text-xs text-muted">
                     {new Date(lead.createdAt).toLocaleDateString('en-US', { day: '2-digit', month: 'short', year: 'numeric' })}
                   </td>
                   <td className="px-8 py-6 text-right">
-                    <button className="text-zoho-blue hover:underline text-sm font-medium">Open</button>
+                    <Link href={`/admin/leads/${lead.id}`} className="text-zoho-blue hover:underline text-sm font-medium">
+                      Open
+                    </Link>
                   </td>
                 </tr>
               ))}
