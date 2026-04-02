@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className="w-full flex items-center justify-between px-6 py-5 md:px-12 lg:px-20 relative z-50">
       <Link href="/" className="font-heading text-[1.5rem] font-medium tracking-tighter text-foreground flex items-center gap-2">
-        <img src="/switchax-logo.png" alt="Switchax" className="w-10 h-10 object-contain rounded-lg" />
+        <img src="/switchax-logo-removebg-preview.png" alt="Switchax" className="w-10 h-10 object-contain rounded-lg" />
         Switchax
       </Link>
 
