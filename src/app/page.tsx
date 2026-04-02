@@ -36,7 +36,7 @@ export default function Home() {
               Authorized Zoho Partner. We bridge the gap between Zoho's powerful ecosystem and your unique business needs. Expert implementation, seamless migration, and ongoing strategic support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
-              <Link href="/contact" className="bg-zoho-blue text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium hover:bg-zoho-blue/90 transition-colors text-center">
+              <Link href="/contact" className="bg-zoho-red text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium hover:bg-zoho-red/90 transition-colors text-center">
                 Start Your Transformation
               </Link>
               <button className="border border-zoho-blue text-zoho-blue px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium hover:bg-zoho-blue hover:text-white transition-colors text-center">

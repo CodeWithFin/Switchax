@@ -15,7 +15,7 @@ export default function Footer() {
             </h2>
             <Link 
               href="/contact" 
-              className="inline-flex items-center gap-2 border border-white text-white rounded-full py-2.5 px-6 hover:bg-white hover:text-foreground transition-colors w-max group"
+              className="inline-flex items-center gap-2 bg-zoho-red text-white rounded-full py-2.5 px-6 hover:bg-zoho-red/90 transition-colors w-max group"
             >
               <span className="text-sm font-normal">Book Your Strategy Session</span>
               <Icon 

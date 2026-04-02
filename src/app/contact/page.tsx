@@ -117,7 +117,7 @@ export default function ContactPage() {
               <button 
                 type="submit" 
                 disabled={status === "loading"}
-                className="mt-4 bg-zoho-blue text-white rounded-full py-3 px-6 sm:py-4 sm:px-8 font-medium hover:bg-zoho-blue/90 transition-colors flex items-center justify-center gap-2"
+                className="mt-4 bg-zoho-red text-white rounded-full py-3 px-6 sm:py-4 sm:px-8 font-medium hover:bg-zoho-red/90 transition-colors flex items-center justify-center gap-2"
               >
                 {status === "loading" ? "Sending..." : "Send Message"}
                 <Icon icon="solar:paper-plane-linear" />
