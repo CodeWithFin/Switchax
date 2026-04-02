@@ -90,7 +90,7 @@ export default function Home() {
               {[
                 { value: "250+", label: "Successful Implementations", unit: "" },
                 { value: "45", label: "Certified Experts", unit: "" },
-                { value: "10+", label: "Years Experience", unit: "" },
+                { value: "2", label: "Years Experience", unit: "" },
                 { value: "98%", label: "Client Retention", unit: "" },
               ].map((stat) => (
                 <div key={stat.label} className="flex flex-col border-l border-border-line pl-6">
@@ -371,7 +371,7 @@ export default function Home() {
               { q: "How long does a typical implementation take?", a: "Timelines vary based on complexity, but most projects range from 4-12 weeks." },
               { q: "Do you offer post-implementation support?", a: "Yes, we provide ongoing maintenance and managed services for all our clients." },
               { q: "Can you migrate data from our current CRM?", a: "Absolutely. We specialize in secure data migration from Salesforce, HubSpot, and legacy systems." },
-              { q: "Is Hanson a certified Zoho partner?", a: "Yes, we are a certified Zoho Advanced Partner with over 10 years of experience." },
+              { q: "Is Hanson a certified Zoho partner?", a: "Yes, we are a certified Zoho Advanced Partner with 2 years of dedicated expertise." },
               { q: "Do you provide custom training?", a: "Yes, we offer tailored training sessions for your admin and end-user teams." },
             ].map((item, idx) => (
               <div key={idx} className="border-b border-border-line pb-6 cursor-pointer group">

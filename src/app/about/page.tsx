@@ -61,7 +61,7 @@ export default function AboutPage() {
             <div className="md:w-1/2 grid grid-cols-2 gap-8">
               {[
                 { v: "250+", l: "Implementations" },
-                { v: "10+", l: "Years Exp" },
+                { v: "2", l: "Years Exp" },
                 { v: "45", l: "Certified Experts" },
                 { v: "98%", l: "Client Retention" },
               ].map((s, i) => (
