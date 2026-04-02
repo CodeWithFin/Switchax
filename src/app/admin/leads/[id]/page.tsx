@@ -60,9 +60,9 @@ export default async function LeadDetailsPage({ params }: { params: { id: string
              <div className="flex flex-col gap-6">
                 <div>
                   <label className="text-xs text-muted block mb-1">Email Address</label>
-                  <a href={`mailto:${lead.email}`} className="text-foreground font-medium hover:text-zoho-blue transition-colors flex items-center gap-2">
+                  <a href={`mailto:${lead.email}`} className="text-foreground font-medium hover:text-zoho-blue transition-colors flex flex-wrap items-center gap-2 break-all">
                     {lead.email}
-                    <Icon icon="solar:copy-linear" className="text-sm opacity-50" />
+                    <Icon icon="solar:copy-linear" className="text-sm opacity-50 shrink-0" />
                   </a>
                 </div>
                 <div>
