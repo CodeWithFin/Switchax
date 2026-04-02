@@ -54,17 +54,6 @@ export default function ContactPage() {
                 <h4 className="font-heading text-lg font-medium mb-2">Email Us</h4>
                 <a href="mailto:hello@hanson.com" className="text-foreground hover:underline">hello@hanson.com</a>
               </div>
-              <div>
-                <h4 className="font-heading text-lg font-medium mb-2">Visit Us</h4>
-                <p className="text-muted">45 Delancey Street, New York, 9CA</p>
-              </div>
-              <div className="flex gap-4">
-                {['linkedin', 'instagram', 'facebook'].map(social => (
-                  <a key={social} href="#" className="w-10 h-10 rounded-full border border-border-line flex items-center justify-center hover:bg-foreground hover:text-background transition-colors">
-                    <Icon icon={`solar:${social}-linear`} />
-                  </a>
-                ))}
-              </div>
             </div>
           </div>
 

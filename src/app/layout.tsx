@@ -15,6 +15,11 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Switchax - Authorized Zoho Premium Partner",
   description: "Official Zoho Premium Partner delivering enterprise-grade implementations, seamless migrations, and strategic support globally.",
+  icons: {
+    icon: "/switchax-logo.png",
+    shortcut: "/switchax-logo.png",
+    apple: "/switchax-logo.png",
+  },
 };
 
 export default function RootLayout({
