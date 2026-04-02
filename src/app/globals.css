@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-manrope);
+  
+  --color-background: #fdfcfc;
+  --color-foreground: #0c1100;
+  --color-muted: #4d4d4d;
+  --color-dark: #040600;
+  --color-accent: #333;
+  --color-border-line: #ccc;
+  --color-footer-bg: #040600;
+
+  /* Zoho Brand Colors */
+  --color-zoho-blue: #2C83ED;
+  --color-zoho-red: #E5433C;
+  --color-zoho-yellow: #F2BC2E;
+  --color-zoho-green: #50B14A;
+  
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee-fast: marquee 5s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+:root {
+  --background: #fdfcfc;
+  --foreground: #0c1100;
+  --zoho-blue: #2C83ED;
+}
+
+html, body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+::selection {
+  background-color: #0c1100;
+  color: white;
+}
