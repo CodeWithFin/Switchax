@@ -15,7 +15,7 @@ export default function Footer() {
             </h2>
             <Link 
               href="/contact" 
-              className="inline-flex items-center gap-2 border border-white text-white rounded-full py-2.5 px-6 hover:bg-white hover:text-foreground transition-colors w-max group"
+              className="inline-flex items-center gap-2 bg-zoho-red text-white rounded-full py-2.5 px-6 hover:bg-zoho-red/90 transition-colors w-max group"
             >
               <span className="text-sm font-normal">Book Your Strategy Session</span>
               <Icon 
@@ -69,8 +69,9 @@ export default function Footer() {
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
-          <div className="text-right">
-            Zoho and the Zoho logo are trademarks of Zoho Corporation Pvt. Ltd.
+          <div className="text-right flex flex-col md:items-end gap-2">
+            <span>Zoho and the Zoho logo are trademarks of Zoho Corporation Pvt. Ltd.</span>
+            <Link href="/admin" className="text-[10px] text-accent/20 hover:text-white transition-colors uppercase tracking-[0.2em] font-bold">Dashboard &rarr;</Link>
           </div>
         </div>
 

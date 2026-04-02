@@ -9,7 +9,6 @@ const navLinks = [
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
   { name: "Work", href: "/work" },
-  { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ]
 
@@ -22,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className="w-full flex items-center justify-between px-6 py-5 md:px-12 lg:px-20 relative z-50">
       <Link href="/" className="font-heading text-[1.5rem] font-medium tracking-tighter text-foreground flex items-center gap-2">
-        <span className="bg-zoho-blue text-white w-8 h-8 flex items-center justify-center rounded-lg font-bold">S</span>
+        <img src="/switchax-logo-removebg-preview.png" alt="Switchax" className="w-10 h-10 object-contain rounded-lg" />
         Switchax
       </Link>
 
@@ -37,20 +36,13 @@ export default function Navbar() {
             {link.name}
           </Link>
         ))}
-        <div className="flex items-center gap-1 cursor-pointer hover:text-foreground transition-colors group">
-          Pages 
-          <Icon 
-            icon="solar:alt-arrow-down-linear" 
-            className="text-xs transition-transform group-hover:rotate-180" 
-          />
-        </div>
       </div>
 
       <div className="flex items-center gap-4">
         {/* Desktop CTA */}
         <Link 
           href="/contact" 
-          className="hidden md:flex items-center bg-zoho-blue text-white rounded-full py-2.5 px-6 gap-2 hover:bg-zoho-blue/90 transition-colors"
+          className="hidden md:flex items-center bg-zoho-red text-white rounded-full py-2.5 px-6 gap-2 hover:bg-zoho-red/90 transition-colors"
         >
           <span className="text-sm font-normal">Lets talk</span>
           <Icon icon="solar:arrow-right-up-linear" />
@@ -89,7 +81,7 @@ export default function Navbar() {
               <Link 
                 href="/contact" 
                 onClick={() => setIsMenuOpen(false)}
-                className="flex items-center justify-between bg-zoho-blue text-white rounded-full py-3 px-6 mt-8"
+                className="flex items-center justify-between bg-zoho-red text-white rounded-full py-3 px-6 mt-8"
               >
                 <span className="text-lg font-medium">Lets talk</span>
                 <Icon icon="solar:arrow-right-up-linear" className="text-xl" />

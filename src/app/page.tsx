@@ -36,23 +36,30 @@ export default function Home() {
               Authorized Zoho Partner. We bridge the gap between Zoho's powerful ecosystem and your unique business needs. Expert implementation, seamless migration, and ongoing strategic support.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
-              <Link href="/contact" className="bg-zoho-blue text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium hover:bg-zoho-blue/90 transition-colors text-center">
+              <Link href="/contact" className="bg-zoho-red text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium hover:bg-zoho-red/90 transition-colors text-center">
                 Start Your Transformation
               </Link>
-              <button className="border border-zoho-blue text-zoho-blue px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium hover:bg-zoho-blue hover:text-white transition-colors text-center">
+              <Link href="/services" className="border border-zoho-blue text-zoho-blue px-6 py-3 sm:px-8 sm:py-4 rounded-full font-medium hover:bg-zoho-blue hover:text-white transition-colors text-center inline-block">
                 Explore Services
-              </button>
+              </Link>
             </div>
           </div>
 
           {/* Image Marquee */}
           <div className="w-full relative py-4">
             <Marquee speed="slow" className="gap-6" innerClassName="gap-6">
-              {[1, 2, 3, 4, 1].map((i, idx) => (
+              {[
+                "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop"
+              ].map((src, idx) => (
                 <div key={idx} className="relative w-64 h-48 md:w-72 md:h-56 shrink-0 overflow-hidden rounded-xl">
                   <Image 
-                    src={`https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop&sig=${i}`}
-                    alt="Work"
+                    src={src}
+                    alt={`Work feature ${idx + 1}`}
                     fill
                     sizes="(max-width: 768px) 256px, 288px"
                     className="object-cover"
@@ -83,7 +90,7 @@ export default function Home() {
               {[
                 { value: "250+", label: "Successful Implementations", unit: "" },
                 { value: "45", label: "Certified Experts", unit: "" },
-                { value: "10+", label: "Years Experience", unit: "" },
+                { value: "2", label: "Years Experience", unit: "" },
                 { value: "98%", label: "Client Retention", unit: "" },
               ].map((stat) => (
                 <div key={stat.label} className="flex flex-col border-l border-border-line pl-6">
@@ -98,13 +105,13 @@ export default function Home() {
               ))}
             </div>
             <div className="flex justify-start md:justify-end">
-              <button className="inline-flex items-center gap-2 border border-foreground text-foreground rounded-full py-2.5 px-6 hover:bg-foreground hover:text-background transition-colors group">
+              <Link href="/about" className="inline-flex items-center gap-2 border border-foreground text-foreground rounded-full py-2.5 px-6 hover:bg-foreground hover:text-background transition-colors group">
                 <span className="text-sm font-normal">Learn More</span>
                 <Icon 
                   icon="solar:arrow-right-linear" 
                   className="text-lg transition-transform group-hover:translate-x-1" 
                 />
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -204,10 +211,13 @@ export default function Home() {
               { title: "Data Migration", desc: "Secure, zero-downtime migration from Salesforce, Hubspot, or legacy systems." },
               { title: "Team Training", desc: "Ensuring high adoption with tailored training programs and technical support." },
             ].map((item, idx) => (
-              <div key={idx} className="p-8 border border-border-line rounded-2xl hover:bg-gray-50 transition-colors">
+              <div key={idx} className="p-8 border border-border-line rounded-2xl hover:bg-gray-50 transition-colors flex flex-col items-start">
                 <span className="font-heading text-2xl font-medium block mb-4">0{idx + 1}.</span>
                 <h3 className="font-heading text-xl font-semibold mb-4">{item.title}</h3>
-                <p className="text-muted leading-relaxed">{item.desc}</p>
+                <p className="text-muted leading-relaxed mb-6">{item.desc}</p>
+                <Link href="/services" className="mt-auto text-sm font-medium inline-flex items-center gap-1 group/link text-foreground hover:text-zoho-blue transition-colors">
+                  Learn More <Icon icon="solar:arrow-right-linear" className="text-lg transition-transform group-hover/link:translate-x-1" />
+                </Link>
               </div>
             ))}
           </div>
@@ -230,9 +240,13 @@ export default function Home() {
                 <h2 className="font-heading text-[3rem] md:text-[4rem] font-medium tracking-tighter leading-tight mb-8">
                   Why not just go direct?
                 </h2>
-                <p className="text-gray-300 text-lg mb-12">
+                <p className="text-gray-300 text-lg mb-8">
                   Buying Zoho is easy. Making it work perfectly for your exact business model is hard. That's where we come in.
                 </p>
+                <Link href="/services" className="inline-flex items-center gap-2 border border-white text-white rounded-full py-2.5 px-6 hover:bg-white hover:text-dark transition-colors group mb-12">
+                  <span className="text-sm font-normal">Learn About Our Process</span>
+                  <Icon icon="solar:arrow-right-linear" className="text-lg transition-transform group-hover:translate-x-1" />
+                </Link>
                 <div className="flex flex-col gap-6">
                   {[
                     { t: "Tailored Architecture", d: "We configure the system to fit your workflow, not the other way around." },
@@ -364,7 +378,7 @@ export default function Home() {
               { q: "How long does a typical implementation take?", a: "Timelines vary based on complexity, but most projects range from 4-12 weeks." },
               { q: "Do you offer post-implementation support?", a: "Yes, we provide ongoing maintenance and managed services for all our clients." },
               { q: "Can you migrate data from our current CRM?", a: "Absolutely. We specialize in secure data migration from Salesforce, HubSpot, and legacy systems." },
-              { q: "Is Hanson a certified Zoho partner?", a: "Yes, we are a certified Zoho Advanced Partner with over 10 years of experience." },
+              { q: "Is Hanson a certified Zoho partner?", a: "Yes, we are a certified Zoho Advanced Partner with 2 years of dedicated expertise." },
               { q: "Do you provide custom training?", a: "Yes, we offer tailored training sessions for your admin and end-user teams." },
             ].map((item, idx) => (
               <div key={idx} className="border-b border-border-line pb-6 cursor-pointer group">

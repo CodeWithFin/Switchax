@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Marquee from "@/components/Marquee";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutPage() {
   return (
@@ -38,10 +39,13 @@ export default function AboutPage() {
               { title: "Seamless Integration", desc: "Our specialists ensure that Zoho flows perfectly within your existing tech stack." },
               { title: "Ongoing Growth", desc: "We provide strategic audits and updates to keep your business ahead of the curve." },
             ].map((v, i) => (
-              <div key={i} className="flex flex-col gap-4">
+              <div key={i} className="flex flex-col items-start gap-4 p-8 border border-border-line rounded-2xl hover:bg-white transition-colors">
                 <Icon icon="solar:star-linear" className="text-3xl text-zoho-blue" />
                 <h3 className="font-heading text-2xl font-semibold">{v.title}</h3>
-                <p className="text-muted leading-relaxed">{v.desc}</p>
+                <p className="text-muted leading-relaxed mb-4">{v.desc}</p>
+                <Link href="/services" className="mt-auto text-sm font-medium inline-flex items-center gap-1 group/link text-foreground hover:text-zoho-blue transition-colors">
+                  Learn More <Icon icon="solar:arrow-right-linear" className="text-lg transition-transform group-hover/link:translate-x-1" />
+                </Link>
               </div>
             ))}
           </div>
@@ -61,7 +65,7 @@ export default function AboutPage() {
             <div className="md:w-1/2 grid grid-cols-2 gap-8">
               {[
                 { v: "250+", l: "Implementations" },
-                { v: "10+", l: "Years Exp" },
+                { v: "2", l: "Years Exp" },
                 { v: "45", l: "Certified Experts" },
                 { v: "98%", l: "Client Retention" },
               ].map((s, i) => (
