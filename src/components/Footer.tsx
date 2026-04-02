@@ -69,8 +69,9 @@ export default function Footer() {
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
             <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
-          <div className="text-right">
-            Zoho and the Zoho logo are trademarks of Zoho Corporation Pvt. Ltd.
+          <div className="text-right flex flex-col md:items-end gap-2">
+            <span>Zoho and the Zoho logo are trademarks of Zoho Corporation Pvt. Ltd.</span>
+            <Link href="/admin" className="text-[10px] text-accent/20 hover:text-white transition-colors uppercase tracking-[0.2em] font-bold">Dashboard &rarr;</Link>
           </div>
         </div>
 
